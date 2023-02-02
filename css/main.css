@@ -1,0 +1,375 @@
+/*resetear*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*estilos generales*/
+
+body{
+    
+    background-color: whitesmoke;
+    
+}
+
+/*estilos de header*/
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 75px;
+
+
+}
+header div {
+    width: 500px;
+    display: flex;
+    
+}
+header div div{
+    width: 220px;
+    height: 100px;
+}
+header div h1{
+    display: flex;
+    width: 280px;
+    height: 100px;
+    font-size: 30px;
+    text-align: left;
+    align-items: center;
+    
+
+}
+
+header nav  ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;  
+
+}
+
+header nav ul li{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: aliceblue;
+    font-size: 20PX;
+}
+
+
+
+
+.noticia-uno, .noticia-dos{
+    text-align: center;
+    text-justify: auto;
+    width: 300px;
+
+}
+
+.noticia-uno h2, .noticia-dos h2{
+    margin-bottom: 30px;
+}
+
+
+/*estilos de footer*/
+
+footer{
+    text-align: center;
+}
+
+/*estilos del index*/
+
+
+.seccion-proposito{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.proposito-img-fondo{
+    width: 100%;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+
+}
+
+.proposito-texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color:black;
+    text-shadow: 1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+    
+}
+
+.contenedor-1{
+
+    display: block;
+    height: 880px;
+    padding: 50px;
+    
+}
+.div1{
+
+    display: block;
+    height: 300px;
+}
+.div1-claves-nuevo-sistema{
+    display: block;
+    padding: 50px;
+
+
+}
+.h2-claves-nuevo-sistema{
+    text-align: center;
+    font-size: 30 px;
+}
+
+.div2-claves-nuevo-sistema{
+    margin-top: 50px;
+    display: block;
+    height: 100px;
+    text-align: center;
+    font-size: 25px;
+    padding: 0 200px 0 200px;
+}
+
+
+/*acá va los estilos de las 3 cajas donde dicen "calidad en la Educación Pública", "Nueva institucionalidad" y "Fortalecimiento de las comunidades educativas"*/
+.calidad-institucionalidad-fortalecimiento{
+    height: 480px;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    
+}
+
+.calidad-educacion{
+   
+    width: 500px;
+    display: inline-block; 
+    text-align: center;
+    height: 510px;
+
+}
+.nueva-institucionalidad{
+   
+    display: inline-block;
+    width: 500px;
+    height: 510px;
+    text-align: center;
+    
+}
+.comunidades-educativas{
+    
+    display: inline-block;
+    width: 500px;
+    height: 510px;
+    text-align: center;
+    
+}
+.calidad-educacion-texto-parrafo1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.calidad-educacion-texto-parrafo2{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nueva-institucionalidad-parrafo1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.nueva-institucionalidad-parrafo2{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comunidades_educativas-parrafo1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.comunidades_educativas-parrafo2{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*estilos de la página nosotros*/
+
+.section-quienes-somos{
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 600px;
+    padding: 80px 0px 80px 0px;
+}
+
+.contenedor-imagen-quienes-somos{
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 100px;
+    
+}
+
+.contenedor-texto-quienes-somos{
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+
+}
+
+.h2-texto-quienes-somos{
+    margin-bottom: 50px;
+}
+
+/*estilos de la página reportes*/
+.titulo-y-reportes{
+    display: block;
+}
+.texto-report-matricula{
+    display: block;
+    padding: 50px;
+}
+.reporte1{
+    width: 900px;
+    height: 500px;
+    padding: 0% 20% 0 20%;
+}
+.nota-report1{
+    display: block;
+    padding: 50px;
+}
+
+
+
+.reporte2{
+    width: 900px;
+    height: 500px;
+    padding: 0% 20% 0 20%;
+}
+.nota-report2{
+    display: block;
+    padding: 50px;
+}
+
+.tabla-descargas{
+    display: block;
+    padding: 50px;
+    margin: 0% 25% 0% 25%;
+}
+
+/*estilos de página contáctenos*/
+
+.contenedor-pag-contacto{
+    padding: 50px;
+}
+.div-section-contacto{
+    display: inline-block;
+    width: 500px;
+}
+
+.div-section-formulario{
+    display: inline-block;
+    width: 500px;
+}
+
+/*estilos de galeria*/
+.container-galeria{
+    display: block;
+}
+.div-img{
+    display: inline-block;
+}
+.img{
+    width: 350px;
+}
+
+
+/*ESTILO MOBILE*/
+@media screen and (min-width:600px){
+    /*estilos de header*/
+    header{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0.7rem;
+        align-items: center;
+    }
+
+    header nav ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+    
+    header nav ul li{
+        font-weight: bold;
+    }
+
+    /*estilos de main*/
+    section{
+        display: block;
+        display: flex;
+        background-color: #51b0df;
+        padding: 1rem;
+    }
+    section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    section div img{
+        width: 20px;
+    }
+}
+@media screen and(min-width:1024px){
+    /*estilos de main*/
+    main{
+        width: 1000px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "p img"
+        "h2 img"
+        "p-dos img"
+        "boton img";
+        justify-content: center;
+        justify-items: center;
+    }
+
+    main h2{
+        grid-area: h2;
+    }
+    main img{
+        grid-area: img;
+    }
+    main p{
+        grid-area: p;
+    }
+    main p-dos{
+        grid-area: p-dos;
+    }
+
+}
