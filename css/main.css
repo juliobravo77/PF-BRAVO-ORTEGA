@@ -496,7 +496,8 @@ fieldset {
     display: none; }
   .header {
     width: 100%;
-    display: block; }
+    display: flex;
+    flex-wrap: wrap; }
   /*estilos mobile del main*/
   .seccion-proposito {
     display: block; }
@@ -600,6 +601,8 @@ fieldset {
     display: block;
     text-align: center; }
   /*estilos de la página reportes*/
+  .texto-report-matricula {
+    text-align: center; }
   .tabla-links-descargas {
     display: flex;
     flex-wrap: wrap;

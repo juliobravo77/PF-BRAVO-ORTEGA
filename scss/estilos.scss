@@ -600,7 +600,9 @@ fieldset{
 }
 .header{
     width:100%;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 /*estilos mobile del main*/
@@ -765,7 +767,9 @@ fieldset{
 
 /*estilos de la página reportes*/
 
-
+.texto-report-matricula{
+    text-align: center;
+}
 .tabla-links-descargas{
     display: flex;
     flex-wrap: wrap;
