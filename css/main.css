@@ -550,7 +550,7 @@ fieldset {
     justify-content: center;
     align-content: center;
     width: 350px;
-    margin: 50px; }
+    margin: 40px; }
 
 .titulo-videos {
   padding: 35px;
@@ -567,7 +567,7 @@ fieldset {
     justify-content: center;
     align-content: center;
     width: 350px;
-    margin: 50px; }
+    margin: 40px; }
 
 /*ESTILO MOBILE*/
 @media screen and (max-width: 1200px) {
@@ -608,7 +608,8 @@ fieldset {
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 20px; }
   /*estilos de los links de interes*/
   .div-contenedor-seccion3 {
     display: flex;
@@ -639,19 +640,21 @@ fieldset {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "img p1" "img p2" "img p2" "img p2" "img p2" "img p2";
     margin-bottom: 25px;
-    width: 400px;
-    height: 200px;
+    width: 90%;
+    height: 250px;
     background-color: grey;
     align-items: center; }
   .p1 {
     grid-area: p1;
     text-align: center;
     font-weight: bold;
-    padding: 10px; }
+    padding: 10px;
+    font-size: 15px; }
   .p2 {
     grid-area: p2;
     text-align: center;
-    padding: 15px; }
+    padding: 15px;
+    font-size: 15px; }
   .img1 {
     grid-area: img;
     width: 80%;
@@ -664,7 +667,8 @@ fieldset {
     flex-direction: column;
     text-align: center; }
   .div-section-contacto {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    width: 100%; }
   fieldset {
     display: flex !important;
     flex-direction: column;
@@ -702,6 +706,8 @@ fieldset {
   .titulo-galeria, .titulo-videos {
     display: block;
     text-align: center; }
+  .container-galeria, .container-video {
+    width: 100%; }
   /*estilos de la página reportes*/
   .texto-report-matricula {
     text-align: center; }
@@ -721,9 +727,10 @@ fieldset {
     justify-items: center; }
     .section-quienes-somos .contenedor-texto-quienes-somos {
       justify-items: center;
-      align-items: center; }
-    .section-quienes-somos div img {
+      align-items: center;
       width: 100%; }
+    .section-quienes-somos div img {
+      width: 300px; }
   .div-conformacion-slep {
     display: flex;
     flex-direction: column;
@@ -740,3 +747,24 @@ fieldset {
       padding-bottom: 10px; }
     .div-consejo-comite .div-interno-comite, .div-consejo-comite .div-interno-consejo {
       margin-bottom: 20px; } }
+
+@media screen and (max-width: 450px) {
+  /*estilos galería pantallas pequeñas*/
+  .container-galeria {
+    width: 100%; }
+    .container-galeria img {
+      width: 300px; }
+  .container-video {
+    width: 100%; }
+    .container-video div iframe {
+      width: 300px !important; }
+  /*estilos contáctenos pantallas pequeñas*/
+  .contenedor-pag-contacto {
+    margin: 0;
+    padding: 0; }
+  .div-section-contacto {
+    width: 80%;
+    padding-top: 35px; }
+  .div-section-formulario {
+    width: 95%;
+    padding-bottom: 50px; } }

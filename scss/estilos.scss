@@ -667,7 +667,7 @@ fieldset{
         justify-content: center;
         align-content: center ;
         width: 350px;
-        margin: 50px;
+        margin: 40px;
     }
 
 }
@@ -688,7 +688,7 @@ fieldset{
         justify-content: center;
         align-content: center ;
         width: 350px;
-        margin: 50px;
+        margin: 40px;
     }
 }
 
@@ -759,6 +759,7 @@ fieldset{
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 
@@ -804,8 +805,8 @@ fieldset{
                         "img p2"
                         "img p2";
     margin-bottom: 25px;
-    width: 400px;
-    height: 200px;
+    width: 90%;
+    height: 250px;
     background-color: grey;
     align-items: center;
 }
@@ -814,11 +815,13 @@ fieldset{
     text-align: center;
     font-weight: bold;
     padding: 10px;
+    font-size: 15px;
 }
 .p2{
     grid-area: p2;
     text-align: center;
     padding: 15px;
+    font-size: 15px;
   
 }
 .img1{
@@ -839,9 +842,11 @@ fieldset{
     display: flex !important;
     flex-direction: column;
     text-align: center;
+    
 }
 .div-section-contacto{
     margin-bottom: 40px;
+    width: 100%;
 }
 
 fieldset{
@@ -903,6 +908,11 @@ fieldset{
 .titulo-galeria, .titulo-videos{
     display: block;
     text-align: center;
+    
+}
+.container-galeria, .container-video{
+    width: 100%;
+    
 }
 
 
@@ -928,15 +938,16 @@ fieldset{
 
 /*estilos de la página nosotros*/
 .section-quienes-somos{
-
+    
     @include flex;
     justify-items: center;
     .contenedor-texto-quienes-somos{
         justify-items: center;
         align-items: center;
+        width: 100%;
     }
     div img{
-        width: 100%;
+        width: 300px;
     }
     
 
@@ -967,6 +978,39 @@ fieldset{
 }
 
 }
+
+@media screen and (max-width: 450px){
+/*estilos galería pantallas pequeñas*/
+    .container-galeria{
+        width: 100%;
+        img{
+            width: 300px;
+        }
+    }
+    .container-video{
+        width: 100%;
+        div iframe{
+            width: 300px !important;
+        }
+    }
+    
+    /*estilos contáctenos pantallas pequeñas*/
+    .contenedor-pag-contacto{
+        margin: 0;
+        padding: 0;
+        
+        }
+        .div-section-contacto{
+            width: 80%;
+            padding-top: 35px;
+            
+        }
+        .div-section-formulario{
+            width: 95%;
+            padding-bottom: 50px;
+        }
+        
+    }
 
 
 
