@@ -357,8 +357,8 @@ footer .contenedor-footer-derecha img {
 
 .reporte1 {
   display: inline-block;
-  width: 100% !important;
-  height: 700px !important;
+  width: 100%;
+  height: 700px;
   padding: 0% 20% 0 20%; }
 
 .nota-report1 {
@@ -383,8 +383,7 @@ footer .contenedor-footer-derecha img {
 .tabla-links-descargas {
   display: flex;
   justify-content: center;
-  margin: 15px 10px 15px 10px;
-  background-color: aqua; }
+  margin: 15px 10px 15px 10px; }
   .tabla-links-descargas tr {
     padding: 10px 20px 10px 20px;
     border: 2px solid black; }
@@ -584,9 +583,8 @@ fieldset {
 
 .reporte1 {
   display: inline-block;
-  width: 100%;
-  height: 300px;
-  padding: 0% 10% 0 10%; }
+  margin: 0px !important;
+  padding: 0px !important; }
 
 .nota-report1 {
   display: block;
@@ -594,9 +592,8 @@ fieldset {
 
 .reporte2 {
   display: inline-block;
-  width: 100%;
-  height: 300px;
-  padding: 0% 10% 0 10%; }
+  margin: 0px !important;
+  padding: 0px !important; }
 
 .nota-report2 {
   display: block;
