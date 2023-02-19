@@ -356,8 +356,9 @@ footer .contenedor-footer-derecha img {
   padding: 50px; }
 
 .reporte1 {
-  width: 900px;
-  height: 500px;
+  display: inline-block;
+  width: 100%;
+  height: 700px;
   padding: 0% 20% 0 20%; }
 
 .nota-report1 {
@@ -365,18 +366,35 @@ footer .contenedor-footer-derecha img {
   padding: 50px; }
 
 .reporte2 {
-  width: 900px;
-  height: 500px;
+  display: inline-block;
+  width: 100%;
+  height: 700px;
   padding: 0% 20% 0 20%; }
 
 .nota-report2 {
   display: block;
   padding: 50px; }
 
-.tabla-descargas {
+.titulo-descargas {
   display: block;
-  padding: 50px;
-  margin: 0% 25% 0% 25%; }
+  text-align: center;
+  margin: 20px 20px 35px 20px; }
+
+.tabla-links-descargas {
+  display: flex;
+  justify-content: center;
+  margin: 15px 10px 15px 10px; }
+  .tabla-links-descargas tr {
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black; }
+  .tabla-links-descargas th {
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    border: 2px solid black; }
+  .tabla-links-descargas td {
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black; }
 
 /*estilos de página contáctenos*/
 fieldset {
@@ -554,3 +572,36 @@ fieldset {
     display: none; }
   .mobile {
     display: block; } }
+
+/*estilos de la página reportes*/
+.titulo-y-reportes {
+  display: block; }
+
+.texto-report-matricula {
+  display: block;
+  padding: 15px; }
+
+.reporte1 {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  padding: 0% 10% 0 10%; }
+
+.nota-report1 {
+  display: block;
+  padding: 15px; }
+
+.reporte2 {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  padding: 0% 10% 0 10%; }
+
+.nota-report2 {
+  display: block;
+  padding: 50px; }
+
+.titulo-descargas {
+  display: block;
+  text-align: center;
+  margin: 20px 20px 35px 20px; }
