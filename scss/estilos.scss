@@ -134,7 +134,6 @@ footer{ div{ div{ h3{
 footer{
     text-align: center;
     background-color: #49abdc;
-    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     height: 200px;
@@ -277,6 +276,9 @@ display: none;
     transform: scale(1.1);
     transition: 1s;
 }
+.contenedor-seccion3{
+    margin-bottom: 150px;
+}
 
 
 /*acá va los estilos de las 3 cajas donde dicen "calidad en la Educación Pública", "Nueva institucionalidad" y "Fortalecimiento de las comunidades educativas"*/
@@ -383,6 +385,7 @@ display: none;
     grid-template-rows: 1fr;
     gap: 50px; 
     align-items: center;
+    
  
 }
 
@@ -401,12 +404,72 @@ display: none;
     flex-direction: column;
     width: 500px;
     text-align: center;
-    margin-left: 10%;
+  
 
 }
 
 .h2-texto-quienes-somos{
     margin-bottom: 50px;
+}
+
+.section-conformacion-slep{
+    .p1-conformacion-slep{
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+    .p2-conformacion-slep{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+    margin-bottom: 0%;
+    padding: 20px 20px 50px 20px;
+    .div-conformacion-slep{
+        width: 40%;
+        display: block;
+        text-align: center;
+        padding: 20px 20px 50px 20px;
+        .p2-conformacion-slep{
+            padding: 20px;
+        }
+    }
+    .div-consejo-comite{
+        margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 1fr 1fr;
+    grid-template-areas: "item1 item2";
+    justify-items: center;
+    .titulo-consejo{
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-size: 1.4rem;
+    }
+  
+    .div-interno-consejo{
+        grid-area: item1;
+        
+        text-align: justify;
+        width: 80%;
+        .titulo-consejo{
+            text-align: center;
+        }
+    }
+    .div-interno-comite{
+        grid-area: item2;
+        text-align: justify;
+        width: 80%;
+        .titulo-consejo{
+            text-align: center;
+        }
+    }
+   
+    }
+    
 }
 
 /*estilos de la página reportes*/
@@ -509,7 +572,11 @@ fieldset{
 }
 .boton-formulario{
     margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 20%;
     grid-area: boton;
+    justify-items: center;
+    
 }
 .boton-formulario:hover{
     transform: scale(1.05);
@@ -527,15 +594,21 @@ fieldset{
 .div-section-contacto{
     display: inline-block;
     width: 500px;
+    div h2{
+        margin-bottom: 50px;
+    }
 }
 .div-section-formulario{
+    margin-top: 50px;
     display: inline-block;
     width: 500px;
 }
 .boton-formulario{
-    background-image: linear-gradient(to bottom,rgb(34, 74, 248),rgb(39, 120, 241));
+    background-image: linear-gradient(to bottom,rgb(248, 98, 34),rgb(241, 130, 39));
     box-shadow: 2px 2px 2px black;
     font-weight: bold;
+    width: 350px;
+   
 }
 
 
@@ -608,10 +681,7 @@ fieldset{
    
 }
 }
-.navbar-toggler{
-    display: flex !important;
-    justify-content: end !important;
-}
+
 .header{
     width:100%;
     display: flex;
@@ -737,6 +807,13 @@ fieldset{
     display: flex !important;
     flex-direction: column;
     justify-content: center;
+    justify-items: center;
+    .boton-formulario{
+        text-align: center;
+        width: 200px;
+        margin: auto;
+    }
+
 }
 .item1-formulario{
     display: block !important;
@@ -748,17 +825,26 @@ fieldset{
     display: block !important;
 }
 .imput1{
-    display: flex !important;
+    display: block !important;
     text-align: center;
+    margin: 0% 15% 7% 15%;
     
 }
 .imput2{
     display: block !important;
     text-align: center;
+    margin: 0% 15% 7% 15%;
 }
 .imput3{
     display: block !important;
     text-align: center;
+    margin: 0% 15% 15% 15%;
+
+}
+
+
+.div-section-contacto p{
+    display: inline;
 }
 
 
@@ -799,9 +885,50 @@ fieldset{
 
 }
 
+/*estilos de la página nosotros*/
+.section-quienes-somos{
 
-
-
-
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    .contenedor-texto-quienes-somos{
+        justify-items: center;
+        align-items: center;
+    }
+    div img{
+        width: 100%;
+    }
+    
 
 }
+.div-conformacion-slep{
+    
+    display: flex;
+    flex-direction: column;
+    width: 80% !important;
+
+}
+
+.div-consejo-comite{
+    margin-top: 0px !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    p{
+        text-align: justify;
+    
+    }
+    .titulo-consejo{
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .div-interno-comite, .div-interno-consejo{
+        margin-bottom: 20px;
+    }
+}
+
+}
+
+
+
+
