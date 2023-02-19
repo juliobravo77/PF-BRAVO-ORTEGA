@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /*resetear*/
+.boton-formulario {
+  background-image: linear-gradient(to bottom, #f86222, #f18227);
+  box-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  width: 250px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -138,10 +144,15 @@ footer .contenedor-footer-derecha {
   display: flex;
   justify-content: space-around;
   width: 300px; }
+  footer .contenedor-footer-derecha .img-youtube {
+    height: 50px; }
+
+.img-twitter {
+  background-color: white !important; }
 
 footer .contenedor-footer-derecha img {
   width: 50px;
-  background-color: white; }
+  background-color: #49abdc; }
 
 /*estilos del index*/
 .noticias-mobile {
@@ -237,7 +248,21 @@ footer .contenedor-footer-derecha img {
   background-image: linear-gradient(to bottom, grey, #c5c3c3);
   width: 400px;
   height: 300px;
-  justify-items: center; }
+  justify-items: center;
+  align-items: center;
+  display: flex; }
+  .tarjeta-noticia .div-noticia {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px; }
+    .tarjeta-noticia .div-noticia img {
+      padding: 30px;
+      width: 40%; }
+    .tarjeta-noticia .div-noticia .titulo-noticia1 {
+      text-align: center;
+      font-weight: bold; }
+    .tarjeta-noticia .div-noticia .parrafo-noticia1 {
+      text-align: justify; }
 
 .img-links-interes:hover {
   transform: scale(1.1);
@@ -329,7 +354,8 @@ footer .contenedor-footer-derecha img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 50px;
-  align-items: center; }
+  align-items: center;
+  justify-items: center; }
 
 .contenedor-imagen-quienes-somos {
   display: inline-block;
@@ -350,8 +376,8 @@ footer .contenedor-footer-derecha img {
 
 .section-conformacion-slep {
   display: flex;
+  display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
   background-color: #d7d7d7;
   margin-bottom: 0%;
@@ -396,6 +422,9 @@ footer .contenedor-footer-derecha img {
 /*estilos de la página reportes*/
 .titulo-y-reportes {
   display: block; }
+  .titulo-y-reportes .texto-report-matricula {
+    font-size: 20px;
+    font-weight: bold; }
 
 .texto-report-matricula {
   display: block;
@@ -418,6 +447,9 @@ footer .contenedor-footer-derecha img {
 .nota-report2 {
   display: block;
   padding: 50px; }
+
+.tabla-descargas {
+  margin-bottom: 80px; }
 
 .titulo-descargas {
   display: block;
@@ -473,7 +505,7 @@ fieldset {
 
 .boton-formulario {
   margin-top: 25px;
-  margin-left: 15%;
+  margin-left: 25%;
   margin-right: 20%;
   grid-area: boton;
   justify-items: center; }
@@ -488,7 +520,8 @@ fieldset {
   grid-template-rows: 1fr;
   padding: 50px;
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  padding-bottom: 100px; }
 
 .div-section-contacto {
   display: inline-block;
@@ -500,12 +533,6 @@ fieldset {
   margin-top: 50px;
   display: inline-block;
   width: 500px; }
-
-.boton-formulario {
-  background-image: linear-gradient(to bottom, #f86222, #f18227);
-  box-shadow: 2px 2px 2px black;
-  font-weight: bold;
-  width: 350px; }
 
 /*estilos de galeria*/
 .titulo-galeria {
@@ -591,7 +618,8 @@ fieldset {
   .img-links-interes {
     display: flex;
     justify-content: center;
-    padding: 10px; }
+    padding: 10px;
+    padding-bottom: 50px; }
   .contenedor-seccion3 {
     height: 600px;
     display: flex;
@@ -611,17 +639,23 @@ fieldset {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "img p1" "img p2" "img p2" "img p2" "img p2" "img p2";
     margin-bottom: 25px;
-    width: 340px;
+    width: 400px;
     height: 200px;
-    background-color: grey; }
+    background-color: grey;
+    align-items: center; }
   .p1 {
     grid-area: p1;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold;
+    padding: 10px; }
   .p2 {
     grid-area: p2;
-    text-align: center; }
+    text-align: center;
+    padding: 15px; }
   .img1 {
-    grid-area: img; }
+    grid-area: img;
+    width: 80%;
+    padding: 15px; }
   .contenedor-1 {
     display: none; }
   /*estilos mobile de la página contáctenos*/

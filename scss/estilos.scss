@@ -1,5 +1,7 @@
 /*resetear*/
 @import "vars/variables";
+@import "vars/extend";
+@import "vars/mixin";
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@
 
 body{
     
-    background-color: whitesmoke !important;
+    background-color: $color-body;
     
 }
 
@@ -152,10 +154,17 @@ footer .contenedor-footer-derecha{
     display: flex;
     justify-content: space-around;
     width: 300px;
+    .img-youtube{
+        height: 50px;
+    }
+}
+.img-twitter{
+    background-color: white !important;
+    
 }
 footer .contenedor-footer-derecha img{
     width: 50px;
-    background-color: white;
+    background-color: #49abdc;
 }
 
 /*estilos del index*/
@@ -271,7 +280,28 @@ display: none;
     width: 400px;
     height: 300px;
     justify-items: center;
+    align-items: center;
+    display: flex;
+   
+    .div-noticia{
+
+        display: flex;
+        align-items: center;
+        padding: 10px 20px 10px 10px;
+        img{
+            padding: 30px;
+            width: 40%;
+        }
+        .titulo-noticia1{
+            text-align: center;
+            font-weight: bold;
+        }
+        .parrafo-noticia1{
+            text-align: justify;
+        }
+    }
 }
+
 .img-links-interes:hover{
     transform: scale(1.1);
     transition: 1s;
@@ -349,7 +379,7 @@ display: none;
 
 /*estilos de la parte de las noticias destacadas*/
 .contenedor-2{
-    background-color: rgb(215, 215, 215);
+    background-color: $color-secciones-alternativas;
 }
 
 
@@ -385,6 +415,8 @@ display: none;
     grid-template-rows: 1fr;
     gap: 50px; 
     align-items: center;
+  
+    justify-items: center;
     
  
 }
@@ -400,8 +432,7 @@ display: none;
     width: 350px;
 }
 .contenedor-texto-quienes-somos{
-    display: flex;
-    flex-direction: column;
+    @include flex;
     width: 500px;
     text-align: center;
   
@@ -422,10 +453,9 @@ display: none;
         font-weight: bold;
     }
     display: flex;
-    flex-direction: column;
-    justify-items: center;
+    @include flex;
     align-items: center;
-    background-color: rgb(215, 215, 215);
+    background-color: $color-secciones-alternativas;
     margin-bottom: 0%;
     padding: 20px 20px 50px 20px;
     .div-conformacion-slep{
@@ -475,6 +505,10 @@ display: none;
 /*estilos de la página reportes*/
 .titulo-y-reportes{
     display: block;
+    .texto-report-matricula{
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 .texto-report-matricula{
     display: block;
@@ -505,7 +539,9 @@ display: none;
 
 
 
-
+.tabla-descargas{
+    margin-bottom: 80px;
+}
 .titulo-descargas{
     display: block;
     text-align: center;
@@ -545,6 +581,7 @@ fieldset{
                         "item2 imput2"
                         "item3 imput3"
                         "boton boton";
+    
 }
 .item1-formulario{
     grid-area: item1;
@@ -572,7 +609,7 @@ fieldset{
 }
 .boton-formulario{
     margin-top: 25px;
-    margin-left: 15%;
+    margin-left: 25%;
     margin-right: 20%;
     grid-area: boton;
     justify-items: center;
@@ -590,6 +627,7 @@ fieldset{
     padding: 50px;
     align-items: center;
     justify-items: center;
+    padding-bottom: 100px;
 }
 .div-section-contacto{
     display: inline-block;
@@ -604,11 +642,7 @@ fieldset{
     width: 500px;
 }
 .boton-formulario{
-    background-image: linear-gradient(to bottom,rgb(248, 98, 34),rgb(241, 130, 39));
-    box-shadow: 2px 2px 2px black;
-    font-weight: bold;
-    width: 350px;
-   
+    @extend %boton-formulario;
 }
 
 
@@ -730,8 +764,7 @@ fieldset{
 
 /*estilos de los links de interes*/
 .div-contenedor-seccion3{
-    display: flex;
-    flex-direction: column;
+    @include flex;
     align-content: center;
    justify-items: center;
    
@@ -741,6 +774,7 @@ fieldset{
     display: flex;
     justify-content: center;
     padding: 10px;
+    padding-bottom: 50px;
 }
 .contenedor-seccion3{
     height: 600px;
@@ -770,20 +804,27 @@ fieldset{
                         "img p2"
                         "img p2";
     margin-bottom: 25px;
-    width: 340px;
+    width: 400px;
     height: 200px;
     background-color: grey;
+    align-items: center;
 }
 .p1{
     grid-area: p1;
     text-align: center;
+    font-weight: bold;
+    padding: 10px;
 }
 .p2{
     grid-area: p2;
     text-align: center;
+    padding: 15px;
+  
 }
 .img1{
     grid-area: img;
+    width: 80%;
+    padding: 15px;
 }
 
 
@@ -888,8 +929,7 @@ fieldset{
 /*estilos de la página nosotros*/
 .section-quienes-somos{
 
-    display: flex;
-    flex-direction: column;
+    @include flex;
     justify-items: center;
     .contenedor-texto-quienes-somos{
         justify-items: center;
@@ -903,8 +943,7 @@ fieldset{
 }
 .div-conformacion-slep{
     
-    display: flex;
-    flex-direction: column;
+    @include flex;
     width: 80% !important;
 
 }
