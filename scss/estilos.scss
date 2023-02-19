@@ -765,18 +765,13 @@ fieldset{
 
 /*estilos de la página reportes*/
 
-.reporte1{
-    display: block;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-}
+
 .tabla-links-descargas{
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     th,td{
-        font-size: 15px;
+        font-size: 10px;
     }
 }
 
