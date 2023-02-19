@@ -357,8 +357,8 @@ footer .contenedor-footer-derecha img {
 
 .reporte1 {
   display: inline-block;
-  width: 100%;
-  height: 700px;
+  width: 100% !important;
+  height: 700px !important;
   padding: 0% 20% 0 20%; }
 
 .nota-report1 {
@@ -608,16 +608,4 @@ fieldset {
 
 .tabla-links-descargas {
   display: flex;
-  justify-content: center;
-  margin: 15px 10px 15px 10px; }
-  .tabla-links-descargas tr {
-    padding: 10px 20px 10px 20px;
-    border: 2px solid black; }
-  .tabla-links-descargas th {
-    padding: 10px 20px 10px 20px;
-    text-align: center;
-    border: 2px solid black; }
-  .tabla-links-descargas td {
-    text-align: center;
-    padding: 10px 20px 10px 20px;
-    border: 2px solid black; }
+  flex-wrap: wrap; }
