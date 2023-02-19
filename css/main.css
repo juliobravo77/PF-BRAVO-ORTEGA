@@ -494,6 +494,14 @@ fieldset {
   /*estilos mobile del header del index*/
   .navbar-brand {
     display: none; }
+  .header-izquierdo {
+    padding: 0%;
+    margin: 0%; }
+    .header-izquierdo div img {
+      width: 150px; }
+  .navbar-toggler {
+    display: flex !important;
+    justify-content: end !important; }
   .header {
     width: 100%;
     display: flex;
