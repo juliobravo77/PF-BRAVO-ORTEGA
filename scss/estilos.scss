@@ -420,8 +420,8 @@ display: none;
 .reporte1{
     display: inline-block;
     width: 100%;
-    height: 700px;
-    padding: 0% 20% 0 20%;
+    height: 600px;
+
 }
 .nota-report1{
     display: block;
@@ -433,8 +433,7 @@ display: none;
 .reporte2{
     display: inline-block;
     width: 100%;
-    height: 700px;
-    padding: 0% 20% 0 20%;
+    height: 600px;
 }
 .nota-report2{
     display: block;
@@ -542,15 +541,51 @@ fieldset{
 
 
 /*estilos de galeria*/
+.titulo-galeria{
+    padding: 35px;
+    font-size: 25px;
+}
 .container-galeria{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    
+    .div-img{
+        display: flex;
+        
+    }
+    img{
+        display: flex;
+        justify-content: center;
+        align-content: center ;
+        width: 350px;
+        margin: 50px;
+    }
+
 }
-.div-img{
-    display: inline-block;
+.titulo-videos{
+    padding: 35px;
+    font-size: 25px;
 }
-.img{
-    width: 350px;
+.container-video{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .video{
+        display: flex;
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+        align-content: center ;
+        width: 350px;
+        margin: 50px;
+    }
 }
+
+
 
 
 /*ESTILO MOBILE*/
@@ -720,49 +755,20 @@ fieldset{
     display: block;
 }
 
+/*estilos de la página galería*/
 
-}
-
-/*estilos de la página reportes*/
-
-.titulo-y-reportes{
-    display: block;
-}
-.texto-report-matricula{
-    display: block;
-    padding: 15px;
-}
-.reporte1{
-    display: inline-block;
-    
-
-}
-.nota-report1{
-    display: block;
-    padding: 15px;
-}
-
-.reporte2{
-    display: inline-block;
-  
-
-}
-.nota-report2{
-    display: block;
-    padding: 50px;
-}
-
-
-
-
-.titulo-descargas{
+.titulo-galeria, .titulo-videos{
     display: block;
     text-align: center;
-    margin: 20px 20px 35px 20px;
 }
 
-.tabla-links-descargas{
-    display: flex;
-    flex-wrap: wrap ;
+
+
+
+
+
+
+
+
 
 }

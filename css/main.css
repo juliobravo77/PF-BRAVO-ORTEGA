@@ -358,8 +358,7 @@ footer .contenedor-footer-derecha img {
 .reporte1 {
   display: inline-block;
   width: 100%;
-  height: 700px;
-  padding: 0% 20% 0 20%; }
+  height: 600px; }
 
 .nota-report1 {
   display: block;
@@ -368,8 +367,7 @@ footer .contenedor-footer-derecha img {
 .reporte2 {
   display: inline-block;
   width: 100%;
-  height: 700px;
-  padding: 0% 20% 0 20%; }
+  height: 600px; }
 
 .nota-report2 {
   display: block;
@@ -457,14 +455,39 @@ fieldset {
   font-weight: bold; }
 
 /*estilos de galeria*/
+.titulo-galeria {
+  padding: 35px;
+  font-size: 25px; }
+
 .container-galeria {
-  display: block; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .container-galeria .div-img {
+    display: flex; }
+  .container-galeria img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 350px;
+    margin: 50px; }
 
-.div-img {
-  display: inline-block; }
+.titulo-videos {
+  padding: 35px;
+  font-size: 25px; }
 
-.img {
-  width: 350px; }
+.container-video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .container-video .video {
+    display: flex; }
+  .container-video .video {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 350px;
+    margin: 50px; }
 
 /*ESTILO MOBILE*/
 @media screen and (max-width: 1200px) {
@@ -571,39 +594,8 @@ fieldset {
   .contenedor-2 {
     display: none; }
   .mobile {
-    display: block; } }
-
-/*estilos de la página reportes*/
-.titulo-y-reportes {
-  display: block; }
-
-.texto-report-matricula {
-  display: block;
-  padding: 15px; }
-
-.reporte1 {
-  display: inline-block;
-  margin: 0px !important;
-  padding: 0px !important; }
-
-.nota-report1 {
-  display: block;
-  padding: 15px; }
-
-.reporte2 {
-  display: inline-block;
-  margin: 0px !important;
-  padding: 0px !important; }
-
-.nota-report2 {
-  display: block;
-  padding: 50px; }
-
-.titulo-descargas {
-  display: block;
-  text-align: center;
-  margin: 20px 20px 35px 20px; }
-
-.tabla-links-descargas {
-  display: flex;
-  flex-wrap: wrap; }
+    display: block; }
+  /*estilos de la página galería*/
+  .titulo-galeria, .titulo-videos {
+    display: block;
+    text-align: center; } }
