@@ -598,4 +598,16 @@ fieldset {
   /*estilos de la página galería*/
   .titulo-galeria, .titulo-videos {
     display: block;
-    text-align: center; } }
+    text-align: center; }
+  /*estilos de la página reportes*/
+  .reporte1 {
+    display: block;
+    height: 200px !important;
+    padding: 0%;
+    margin: 0%; }
+  .tabla-links-descargas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px; }
+    .tabla-links-descargas th, .tabla-links-descargas td {
+      font-size: 15px; } }
