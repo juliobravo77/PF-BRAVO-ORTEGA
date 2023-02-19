@@ -383,7 +383,8 @@ footer .contenedor-footer-derecha img {
 .tabla-links-descargas {
   display: flex;
   justify-content: center;
-  margin: 15px 10px 15px 10px; }
+  margin: 15px 10px 15px 10px;
+  background-color: aqua; }
   .tabla-links-descargas tr {
     padding: 10px 20px 10px 20px;
     border: 2px solid black; }
