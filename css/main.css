@@ -11,10 +11,22 @@
   padding: 0; }
 
 /*estilos generales*/
+
 body {
   background-color: whitesmoke !important; }
 
 /*estilos de header*/
+
+/*.dropdown-item{
+  text-align: center !important;
+  padding: 10% !important;
+  margin: 0% !important;
+  width: auto;
+}
+.dropdown-menu{
+ 
+  width: 200px !important;
+}*/
 div div img {
   width: 180px;
   display: inline; }
@@ -40,7 +52,9 @@ div div a {
   padding: 20px 20px 20px 20px; }
 
 nav div ul li:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1); 
+}
+
 
 /* ESTOS ESTILOS HABÍAN SIDO APLICADOS ANTES DE INCORPORAR BOOTSTRAP
 header{
@@ -185,7 +199,10 @@ footer .contenedor-footer-derecha img {
   transform: translate(-50%, -50%);
   font-size: 40px;
   color: black;
-  text-shadow: 1px  0px 0px white, 0px  1px 0px white, -1px  0px 0px white, 0px -1px 0px white; }
+  text-shadow: 1px  0px 0px white,
+ 0px  1px 0px white,
+ -1px  0px 0px white,
+ 0px -1px 0px white; }
 
 .contenedor-1 {
   display: block;
@@ -275,6 +292,7 @@ footer .contenedor-footer-derecha img {
 .calidad-institucionalidad-fortalecimiento {
   height: 480px;
   display: flex;
+  justify-content: center;
   padding: 30px;
   gap: 30px; }
 
@@ -420,6 +438,10 @@ footer .contenedor-footer-derecha img {
         text-align: center; }
 
 /*estilos de la página reportes*/
+.powerbireportes{
+  width: 100%;
+  height: 100vh;
+}
 .titulo-y-reportes {
   display: block; }
   .titulo-y-reportes .texto-report-matricula {
@@ -477,7 +499,10 @@ fieldset {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-area: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "item1 imput1" "item2 imput2" "item3 imput3" "boton boton"; }
+  grid-template-areas: "item1 imput1"
+ "item2 imput2"
+ "item3 imput3"
+ "boton boton"; }
 
 .item1-formulario {
   grid-area: item1;
@@ -536,8 +561,11 @@ fieldset {
 
 /*estilos de galeria*/
 .titulo-galeria {
+  text-align: center;
   padding: 35px;
-  font-size: 25px; }
+  font-size: 25px; 
+  margin-top: 30px;
+}
 
 .container-galeria {
   display: flex;
@@ -553,6 +581,8 @@ fieldset {
     margin: 40px; }
 
 .titulo-videos {
+  margin-top: 30px;
+  text-align: center;
   padding: 35px;
   font-size: 25px; }
 
@@ -638,7 +668,12 @@ fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "img p1" "img p2" "img p2" "img p2" "img p2" "img p2";
+    grid-template-areas: "img p1"
+ "img p2"
+ "img p2"
+ "img p2"
+ "img p2"
+ "img p2";
     margin-bottom: 25px;
     width: 90%;
     height: 250px;
@@ -709,6 +744,9 @@ fieldset {
   .container-galeria, .container-video {
     width: 100%; }
   /*estilos de la página reportes*/
+  .powerbireportes{
+    height:40vh;
+  }
   .texto-report-matricula {
     text-align: center; }
   .tabla-links-descargas {

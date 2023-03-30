@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
-    <title>REPORTES DE MATRÍCULA Y ASISTENCIA</title>
+    <title>GALERÍA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <meta name="description" content="Página de reportes de matrícula y asistencia de los 53 establecimientos de la Provincia del Huasco, según sus correspondientes cursos y grados.">
+    <meta name="description" content="Página de Galería que contiene fotografías y videos de actividades realizadas en cualquiera de los 53 establecimientos de la provincia administrada por el SLEP.">
     <meta name="Keywords" content="Educación Pública, reportes de matrículas, reportes de asistencia,">
+
 
 </head>
 <body>
 
-    <!-- encabezado 
+    <!-- encabezado
     <header>
         <div>
             <div>
@@ -30,9 +31,8 @@
                 <li> <a href="contactenos.html">Contáctenos</a></li>
             </ul>
         </nav>
-    </header> -->
-
-
+    </header>
+    -->
 
     <!--Encabezado con BT-->
     <div class="header">
@@ -60,26 +60,30 @@
                   <li class="nav-item">
                     <a class="nav-link" href="galeria.html">GALERÍA</a>
                   </li>
-                  <li class="nav-item">
+                  <!--<li class="nav-item">
                     <a class="nav-link" href="reportes.html">REPORTES</a>
+                  </li>
+                -->
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      REPORTES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="reportes.html">MATRÍCULA</a></li>
+                      <li><a class="dropdown-item" href="#">FINANZAS</a></li>
+                      <!--<li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      -->
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contactenos.html">CONTÁCTENOS</a>
                   </li>
-                  <!--<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
+                  <!--<li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
-                  </li>-->
+                  </li>
+                -->
                 </ul>
                 <!--<form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -97,58 +101,55 @@
     <!-- contenido principal-->
 
     <main>
-       
-        <div class="reportes-powerbi">
-          
-            <div class="titulo-y-reportes">
-                <div>
-                    <p class="texto-report-matricula">REPORTES DE MATRÍCULA EN POWER BI</p>
-                    <iframe class="reporte1" src="https://app.powerbi.com/view?r=eyJrIjoiZjdiZDViMmYtNjk4NC00MzJhLTk2N2ItYWY0MmI1OTVjZWJjIiwidCI6IjZhN2EwODc3LThhYzctNGVjYi04N2Y0LThlMGVjNmU0YmY0MCJ9" frameborder="0"> *Reporte de uso libre enocntrado en internet (no es el real)</iframe>
-                    <p class="nota-report1">*Reporte de uso libre enocntrado en internet (no es el real)</p>
-                </div>
+      <h2 class="titulo-galeria">GALERÍA</h2>
+        <div class="container-galeria">
+    
+            <div class="div-img">
+                <img class="img" src="../img/img1.webp" alt="imagen de referencia 1">
             </div>
-          
-            <div class="titulo-y-reportes">
-                <div>
-                    <p class="texto-report-matricula">REPORTES DE MATRÍCULA EN POWER BI</p>
-                    
-                    <iframe title="Report Section" class="powerbireportes" src="https://app.powerbi.com/view?r=eyJrIjoiZjdiZDViMmYtNjk4NC00MzJhLTk2N2ItYWY0MmI1OTVjZWJjIiwidCI6IjZhN2EwODc3LThhYzctNGVjYi04N2Y0LThlMGVjNmU0YmY0MCJ9" frameborder="0" allowFullScreen="true"></iframe>
+            <div class="div-img">
+                <img class="img" src="../img/img2.jpg" alt="imagen de referencia 2">
+            </div>
+            <div class="div-img">
+                <img class="img" src="../img/img3.webp" alt="imagen de referencia 3">
+            </div>
+            <div class="div-img">
+                <img class="img" src="../img/img4.gif" alt="imagen de referencia 4">
+            </div>
+            <div class="div-img">
+                <img class="img" src="../img/img5.jpg" alt="imagen de referencia 5">
+            </div>
+            <div class="div-img">
+                <img class="img" src="../img/img6.webp" alt="imagen de referencia 6">
+            </div>
 
-                    <p class="nota-report2">*Reporte de uso libre enocntrado en internet (no es el real)</p>
-                </div>
-            </div>
         </div>
-        <div class="tabla-descargas">
-            <div class="titulo-descargas">
-                <p>DESCARGA DE CONSOLIDADOS EN EXCEL</p>
-            </div>
-            <div class="descargas">
-                <table class="tabla-links-descargas">
-                    <tr>
-                        <th>NOMBRE ARCHIVO</th>
-                        <th>FECHA ACTUALIZACIÓN</th>
-                        <th>LINK DE DESCARGA</th>
-                    </tr>
-                    <Tr>
-                        <td>EJEMPLO 1</td>
-                        <td>EJEMPLO DE ACTUALIZACIÓN 1</td>
-                        <td>EJEMPLO LINK DE DESCARGA 1</td>
-                    </Tr>
-                    <tr>
-                        <td>EJEMPLO 2</td>
-                        <td>EJEMPLO DE ACTUALIZACIÓN 2</td>
-                        <td>EJEMPLO LINK DE DESCARGA 2</td>
-                    </tr>
-                    <tr>
-                        <td>EJEMPLO 3</td>
-                        <td>EJEMPLO DE ACTUALIZACIÓN 3</td>
-                        <td>EJEMPLO LINK DE DESCARGA 3</td>
-                    </tr>   
-                </table>
 
+        <h2 class="titulo-videos">VIDEOS</h2>
+
+        <div class="container-video">
+          
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QhxXB8MjOZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iWzxBgOEGKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gjsz3YPweoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bsqWbjgaGvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gjsz3YPweoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gjsz3YPweoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
         </div>
-        
+
     </main>
 
 
@@ -177,6 +178,5 @@
     </footer>
     <!--Script js bt-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
 </body>
 </html>
