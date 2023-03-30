@@ -455,7 +455,7 @@ footer .contenedor-footer-derecha img {
 .reporte1 {
   display: inline-block;
   width: 100%;
-  height: 600px; }
+  height: 100vh; }
 
 .nota-report1 {
   display: block;
